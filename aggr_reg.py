@@ -14,7 +14,6 @@ if len(sys.argv) <> 2:
     sys.exit(1)
 
 filename = sys.argv[1]
-print(filename)
 
 csvfile = open(filename+'.csv', 'r')
 reader = csv.reader(csvfile, delimiter=';')
