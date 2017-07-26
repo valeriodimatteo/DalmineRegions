@@ -8,15 +8,13 @@ Created on 25/lug/2017
 
 import sys
 import csv
-import math
 
-#if len(sys.argv) <> 2:
-#    print("Usage: aggre_reg.py filname")
-#    sys.exit(1)
+if len(sys.argv) <> 2:
+    print("Usage: aggr_reg.py filname")
+    sys.exit(1)
 
-#filename = sys.argv[1]
-filename = 'ScrutiniFI'
-#print(filename)
+filename = sys.argv[1]
+print(filename)
 
 csvfile = open(filename+'.csv', 'r')
 reader = csv.reader(csvfile, delimiter=';')
